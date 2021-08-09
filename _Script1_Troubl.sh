@@ -1,24 +1,30 @@
 #########################################################################
-# Script 1 - Troubleshooting básico de apenas 1 host   			 
-#   								 
-#  						 
-#   								 
-# Autor: 		Marcos Marques @mqs.jr @linuquix   
-# Data: 		09/08/2021  
-# Ultima Alteração: 	09/08/2021					 
-#   								 
-# Descrição: 		Realiza o troubleshooting básico de apenas 1 host 
-#     	 					 
-# Versão:		Beta
-#   								 
-# Uso: ./_Script1_Troubl.sh   						 
-#   								 
+# Script 1 - Troubleshooting básico de apenas 1 host                     
+#                                                                
+#                                                
+#                                                                
+# Autor:                Marcos Marques @mqs.jr @linuquix   
+# Data:                 09/08/2021  
+# Ultima Alteração:     09/08/2021                                       
+#                                                                
+# Descrição:            Realiza o troubleshooting básico de apenas 1 host 
+#                                                
+# Versão:               Beta
+#                                                                
+# Uso: ./_Script1_Troubl.sh                                                 
+#                                                                
 #########################################################################
 
 #INICIO DO SCRIPT
 
 echo ""
 echo Segue troubleshooting do host: $1
+echo ""
+
+echo ""
+echo -n "Data: " 
+date
+echo ""
 
 echo "================================================================================================="
 echo ""
@@ -50,7 +56,7 @@ echo ""
 
 echo ""
 echo "#NMAP"
-nmap -4 -p 22,53,80,443,8080 -Pn $1
+nmap -p 22,53,80,443,8080 -Pn $1
 echo "================================================================================================="
 
-#FIM DO SCRIPT
+# FIM DO SCRIPT
