@@ -1,3 +1,4 @@
+#!/bin/bash
 #########################################################################
 # Script 1 - Troubleshooting básico de apenas 1 host                     
 #                                                                
