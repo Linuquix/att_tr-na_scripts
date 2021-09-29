@@ -1,4 +1,3 @@
-#!/bin/bash
 #########################################################################
 # Script 1 - Troubleshooting básico de apenas 1 host                     
 #                                                                
@@ -6,7 +5,7 @@
 #                                                                
 # Autor:                Marcos Marques @mqs.jr @linuquix   
 # Data:                 09/08/2021  
-# Ultima Alteração:     09/08/2021                                       
+# Ultima Alteração:     29/08/2021                                       
 #                                                                
 # Descrição:            Realiza o troubleshooting básico de apenas 1 host 
 #                                                
