@@ -5,13 +5,13 @@
 #                                                                
 # Autor:                Marcos Marques @mqs.jr @linuquix   
 # Data:                 09/08/2021  
-# Ultima Alteração:     29/08/2021                                       
+# Ultima Alteração:     29/10/2021                                       
 #                                                                
 # Descrição:            Realiza o troubleshooting básico de apenas 1 host 
 #                                                
 # Versão:               Beta
 #                                                                
-# Uso: ./_Script1_Troubl.sh                                                 
+# Uso: ./_Script1_Troubl.sh <host>                                               
 #                                                                
 #########################################################################
 
@@ -50,17 +50,20 @@ ping6 -c5 $1
 echo ""
 echo "================================================================================================="
 
-
 echo ""
 
-#TRACE
-echo "#TRACE"
-mtr -rn $1
+#TRACE v4
+echo "#TRACE v4"
+mtr -4 -rn $1
 echo "================================================================================================="
 echo ""
 
-
+#TRACE v6
+echo "#TRACE v6"
+mtr -6 -rn $1
+echo "================================================================================================="
 echo ""
+
 
 #NMAP V4 E V6
 echo "#NMAP"
